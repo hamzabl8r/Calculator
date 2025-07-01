@@ -31,6 +31,8 @@ body{
     font-size: 30px;
     padding: 10px;
     text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
 
 }
 .btn{
@@ -66,4 +68,24 @@ body{
     font-size: 20px;
     cursor: pointer;
     grid-column: span 2; 
+}
+@media screen and (max-width: 450px) {
+    .Calculator {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .display {
+        width: 70%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .btn-calc, .zero {
+        height: 50px;
+        font-size: 18px;
+    }
+    .btn {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
