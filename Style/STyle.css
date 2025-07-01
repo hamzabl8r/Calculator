@@ -26,13 +26,16 @@ body{
     border: none;
     border-radius: 50px;
     margin: 20px auto;
+    padding-right: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     color: gray;
     font-size: 30px;
-    padding: 10px;
     text-align: right;
     word-wrap: break-word;
     word-break: break-all;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 
 }
 .btn{
