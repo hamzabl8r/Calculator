@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style/STyle.css">
+</head>
+<body>
+    <div class="Calculator">
+        <div class="screen">
+            <input type="text" class="display" id="display" readonly>
+        </div>
+        <div class="btn">
+            <button onclick="Clear('Clr')" class="btn-calc "  type="submit" >Clr</button>
+            <button onclick="Remove('Del')" class="btn-calc " type="submit">Del</button>
+            <button onclick="calcul('%')" class="btn-calc " type="submit">%</button>
+            <button onclick="calcul('/')" class="btn-calc " type="submit">/</button>
+            <button onclick="calcul('7')" class="btn-calc " >7</button>
+            <button onclick="calcul('8')" class="btn-calc " >8</button>
+            <button onclick="calcul('9')" class="btn-calc " >9</button>
+            <button onclick="calcul('*')" class="btn-calc " type="submit">*</button>
+            <button onclick="calcul('4')" class="btn-calc " >4</button>
+            <button onclick="calcul('5')" class="btn-calc " >5</button>
+            <button onclick="calcul('6')" class="btn-calc " >6</button>
+            <button onclick="calcul('-')" class="btn-calc " type="submit">-</button>
+            <button onclick="calcul('1')" class="btn-calc " >1</button>
+            <button onclick="calcul('2')" class="btn-calc " >2</button>
+            <button onclick="calcul('3')" class="btn-calc " >3</button>
+            <button onclick="calcul('+')" class="btn-calc " type="submit">+</button>
+            <button onclick="calcul('.')" class="btn-calc " >.</button>
+            <button onclick="calcul('0')" class="btn-calc " >0</button>
+            <button onclick="calculate('=')" class="btn-calc zero" type="submit">=</button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
