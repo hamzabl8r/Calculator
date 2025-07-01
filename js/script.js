@@ -1,19 +1,21 @@
-const Cal = document.getElementById("display")
+const display = document.getElementById("display")
 
+function calcul(input) {
+    display.textContent += input
+}
 
-function calcul(input){
-    Cal.value += input;
+function Clear() {
+    display.textContent = ""
 }
-function Clear(){
-    Cal.value = ""
+
+function Remove() {
+    display.textContent = display.textContent.slice(0, -1)
 }
-function Remove(){
-    Cal.value = Cal.value.slice(0, -1);
-}
-function calculate(){
+
+function calculate() {
     try {
-        Cal.value = eval(Cal.value);
+        display.textContent = eval(display.textContent)
     } catch (error) {
-        Cal.value = "Error";    
+        display.textContent = "Error"
     }
 }
